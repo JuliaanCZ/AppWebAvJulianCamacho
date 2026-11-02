@@ -5,4 +5,7 @@
 .vs
 bin
 Debug
-/WebAppPoliMusicV2/WebAppPoliMusicV2.csproj.user
+*.csproj.user
+*.user
+packages/
+obj/

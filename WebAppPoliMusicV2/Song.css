@@ -1,0 +1,48 @@
+:root { color-scheme: light; font-family: "Segoe UI", Arial, sans-serif; color: #172b3a; background: #f3f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: #16576a; }
+a:focus-visible, audio:focus-visible, [tabindex]:focus-visible { outline: 3px solid #136f85; outline-offset: 5px; }
+.skip-link { position: absolute; top: -80px; left: 16px; padding: 12px; z-index: 1; background: white; }
+.skip-link:focus { top: 12px; }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 22px max(5vw, 20px); background: white; border-bottom: 1px solid #dce4e9; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: #172b3a; font-size: 23px; font-weight: 750; text-decoration: none; }
+.brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 11px; color: white; background: #16576a; font-size: 21px; }
+.account { display: flex; align-items: center; gap: 13px; }
+.avatar { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; background: #edf2f4; }
+.welcome { font-size: 13px; line-height: 1.5; color: #516574; overflow-wrap: anywhere; }
+.welcome strong { color: #172b3a; font-size: 15px; }
+.logout { display: inline-flex; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px solid #b8c9d2; border-radius: 8px; font-size: 14px; font-weight: 600; text-decoration: none; }
+.logout:hover { background: #edf5f7; }
+.library { max-width: 1320px; margin: 0 auto; padding: 36px max(3vw, 20px) 16px; }
+.intro { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 38px 42px; border-radius: 18px; background: #173c4d; color: white; }
+.eyebrow { margin: 0 0 12px; color: #a7dce0; font-size: 12px; font-weight: 700; letter-spacing: 2px; }
+h1 { margin: 0; font-size: clamp(28px, 4vw, 42px); line-height: 1.2; letter-spacing: -1px; }
+.description { margin: 14px 0 0; color: #d7e7ed; line-height: 1.6; }
+.record { flex-shrink: 0; display: grid; place-items: center; width: 128px; height: 128px; border-radius: 50%; background: repeating-radial-gradient(circle, #17313e 0, #17313e 4px, #294b59 5px, #17313e 6px); border: 7px solid #315766; }
+.record span { width: 36px; height: 36px; border: 11px solid #a7dce0; border-radius: 50%; background: #17313e; }
+.library-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin: 32px 0 16px; }
+h2 { margin: 0; font-size: 23px; }
+.song-count { color: #516574; font-size: 14px; }
+.notice { margin-bottom: 16px; padding: 16px; border: 1px solid #d7af64; border-radius: 8px; background: #fff6e5; color: #704a12; line-height: 1.6; }
+.table-scroll { overflow-x: auto; background: white; border: 1px solid #dce4e9; border-radius: 12px; }
+.song-table { width: 100%; min-width: 1000px; border-collapse: collapse; text-align: left; }
+.song-table caption { padding: 16px 18px; text-align: left; font-size: 14px; color: #516574; }
+.song-table th { padding: 14px 18px; background: #eaf0f3; color: #344e60; font-size: 12px; font-weight: 700; white-space: nowrap; }
+.song-table td { padding: 18px; border-top: 1px solid #e5ebef; font-size: 14px; }
+.song-table tr:hover td { background: #f8fbfc; }
+.song-name { font-weight: 650; }
+.song-path { max-width: 280px; overflow-wrap: anywhere; color: #516574; font-size: 12px !important; }
+audio { display: block; width: 270px; height: 44px; }
+.missing-audio { display: inline-block; min-width: 180px; color: #79521d; font-size: 13px; }
+.now-playing { margin: 18px 0; color: #344e60; font-size: 14px; }
+.footer { padding: 24px 20px; color: #516574; text-align: center; font-size: 13px; }
+@media (max-width: 640px) {
+    .topbar { align-items: flex-start; flex-direction: column; gap: 18px; }
+    .account { width: 100%; }
+    .logout { margin-left: auto; }
+    .library { padding-top: 22px; }
+    .intro { padding: 28px 24px; }
+    .record { display: none; }
+    .description { font-size: 14px; }
+}
