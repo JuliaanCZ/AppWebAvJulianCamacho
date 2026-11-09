@@ -9,3 +9,5 @@ Debug
 *.user
 packages/
 obj/
+.taller4-work/
+WebAppPoliMusicV3/ConnectionStrings.config
